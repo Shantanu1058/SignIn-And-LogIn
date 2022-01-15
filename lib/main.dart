@@ -37,8 +37,8 @@ class _MyAppState extends State<MyApp> {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SignIn And LogIn',
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      theme:
+          ThemeData(primaryColor: Colors.blue, backgroundColor: Colors.white),
       home: isUserLogIn != null
           ? isUserLogIn == true
               ? const HomePage()
